@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>....</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body {
+    font-family: "Kanit", sans-serif, Tahoma;
+    background: #fff7f9;
+    color: #333;
+    line-height: 1.5;
+  }
+
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('Cuddle Corner.png');
+    background-size: cover;
+    background-position: center;
+   
+    z-index: -1;
+  }
+
+  nav {
+    background: #ff8fa3;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    box-shadow: inset 0 -3px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffe6f0;
+  }
+  main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px 50px;
+  }
+  section.brand {
+    margin-bottom: 50px;
+  }
+  section.brand h2 {
+    color: #ff2e54;
+    font-size: 2rem;
+    border-bottom: 4px solid #ff2e54;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 20px;
+  }
+  .product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 45, 78, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 28px rgba(255, 45, 78, 0.3);
+  }
+  .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff2e54;
+  }
+  .product-info {
+    padding: 12px 10px;
+    text-align: center;
+  }
+  .product-info p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ff2e54;
+  }
+  footer {
+    background: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+ 
+</header>
+
+
+<nav>
+  <a href="#brand1">SANRIO</a>
+  <a href="#brand2">JELLY CAT</a>
+  <a href="#brand3">DOUGLAS CUDDLE TOYS
+</a>
+</nav>
+
+<main>
+  <!-- แบรนด์ 1 -->
+  <section id="brand1" class="brand">
+    <h2>SANRIO</h2>
+    
+     <div class="products">
+      <a href="product1.html" class="product-card"> 
+        <div class="product-image-container">           <img src="myma.png" />
+        </div>
+        <div class="product-info"><p>Doll Plush My Melody Grocery </p></div>
+      </a>
+
+
+     <a href="product2.html" class="product-card"> 
+        <div class="product-image-container">
+          <img src="cery.png" alt="Strawberry Hello Kitty" />
+        </div>
+        <div class="product-info"><p>Strawberry Hello Kitty</p></div>
+      </a>
+      
+      <a href="product3.html" class="product-card"> 
+        <div class="product-image-container">
+          <img src="kuromi.png" alt="Kuromi Grocery" />
+        </div>
+        <div class="product-info"><p>Kuromi Grocery</p></div>
+      </a>
+
+      <a href="product4.html" class="product-card">
+        <div class="product-image-container">
+          <img src="myma.1.png" alt="SS Sea Otter My Melody" />
+        </div>
+        <div class="product-info"><p>SS Sea Otter My Melody</p></div>
+      </a>
+
+
+      <a href="product5.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Bad.png" alt="Fluffy Bad Badtz-Maru" />
+        </div>
+        <div class="product-info"><p>Fluffy Bad Badtz-Maru</p></div>
+      </a>
+
+
+      <a href="product6.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Cinnamoroll.png" alt="Dream Cinnamoroll" />
+        </div>
+        <div class="product-info"><p>White Cat Cinnamoroll</p></div>
+      </a>
+
+
+      <a href="product7.html" class="product-card">
+        <div class="product-image-container">
+          <img src="PomPurin.png" alt="Fuwasha Kids Pom Pom Purin" />
+        </div>
+        <div class="product-info"><p>Fuwasha Kids Pom Pom Purin</p></div>
+      </a>
+
+
+      <a href="product8.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Cinnamoroll.1.png" alt="Dream Cinnamoroll" />
+        </div>
+        <div class="product-info"><p>Dream Cinnamoroll</p></div>
+      </a>
+
+
+      <a href="product9.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Bad.1png.png" alt="Two Bad Badtz Maru" />
+        </div>
+        <div class="product-info"><p>Two Bad Badtz Maru</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- แบรนด์ 2 -->
+  <section id="brand2" class="brand">
+    <h2>JELLY CAT</h2>
+    <div class="products">
+     <div class="products">
+      <a href="product1.1.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat1.png" alt="Jellycat Head Giant" />
+        </div>
+        <div class="product-info"><p>Jellycat Head Giant</p></div>
+      </a>
+      <a href="product1.2.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat2.png" alt="Bumbly Bear Medium" />
+        </div>
+        <div class="product-info"><p>Bumbly Bear Medium</p></div>
+      </a>
+      <a href="product1.3.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat3.png" alt="Loulou Love Bug" />
+        </div>
+        <div class="product-info"><p>Loulou Love Bug</p></div>
+      </a>
+
+      <a href="product1.4.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat4.png" alt="Amuseables Sports Golf Ball" />
+        </div>
+        <div class="product-info"><p>Amuseables Sports Golf Ball</p></div>
+      </a>
+
+
+      <a href="product1.5.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat5.png" alt="Swimming Goggles" />
+        </div>
+        <div class="product-info"><p>Swimming Goggles</p></div>
+      </a>
+
+      <a href="product1.6.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat6.png" alt="Ukulele" />
+        </div>
+        <div class="product-info"><p>Ukulele</p></div>
+      </a>
+
+
+      <a href="product1.7.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat7.png" alt="Coconut" />
+        </div>
+        <div class="product-info"><p>Coconut</p></div>
+      </a>
+
+      <a href="product1.8.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat8.png" alt="Lemonade" />
+        </div>
+        <div class="product-info"><p>Lemonade </p></div>
+      </a>
+
+      <a href="product1.9.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Jellycat9.png" alt="Horatio Pistachio" />
+        </div>
+        <div class="product-info"><p>Horatio Pistachio</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- แบรนด์ 3 -->
+  <section id="brand3" class="brand">
+    <h2>DOUGLAS CUDDLE TOYS
+</h2>
+    <div class="products">
+      <a href="product2.3.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Sheep.png" alt="Emily Leaf Sheep" />
+        </div>
+        <div class="product-info"><p>Emily Leaf Sheep</p></div>
+      </a>
+
+      <a href="product2.4.html" class="product-card">
+        <div class="product-image-container">
+          <img src="MantisShrimp1.png" alt="Punchie Peacock Mantis Shrimp" />
+        </div>
+        <div class="product-info"><p>Punchie Peacock Mantis Shrimp</p></div>
+      </a>
+
+
+      <a href="product2.5.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Otter.png" alt="Otter Melon Macaroon" />
+        </div>
+        <div class="product-info"><p>Otter Melon Macaroon</p></div>
+      </a>
+
+      <a href="product2.6.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Crab.png" alt="Chesa Blue Crab" />
+        </div>
+        <div class="product-info"><p>Chesa Blue Crab</p></div>
+      </a>
+
+      <a href="product2.7.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Lobster.png" alt="Clawson Lobster" />
+        </div>
+        <div class="product-info"><p>Clawson Lobster</p></div>
+      </a>
+
+      <a href="product2.8.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Monkey.png" alt="Mikie Soft Monkey" />
+        </div>
+        <div class="product-info"><p>Mikie Soft Monkey</p></div>
+      </a>
+
+      <a href="product2.9.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Elephant.png" alt="Everlie Soft Elephant" />
+        </div>
+        <div class="product-info"><p>Everlie Soft Elephant</p></div>
+      </a>
+
+      <a href="product2.10.html" class="product-card">
+        <div class="product-image-container">
+          <img src="Sloth.png" alt="Super Lizzie Soft Sloth" />
+        </div>
+        <div class="product-info"><p>Super Lizzie Soft Sloth</p></div>
+      </a>
+
+      <a href="product2.11html.html" class="product-card">
+        <div class="product-image-container">
+          <img src="RedPanda.png" alt="Kyrie Soft Red Panda" />
+        </div>
+        <div class="product-info"><p>Kyrie Soft Red Panda</p></div>
+      </a>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  นางสาวปิ่นมุก กองโพธิ์ชัย สท.3/2 029
+</footer>
+
+</body>
+</html>
